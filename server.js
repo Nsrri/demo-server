@@ -5,12 +5,12 @@ const jokesDB = require("devpun/jokes.json");
 const devpun = require("devpun");
 const port = process.env.PORT || 3000;
 
-// console.log(devpun.list("react"));
-// app.use(
-//   cors({
-//     origin: ["http://localhost:3000", "<deployed URL>"],
-//   })
-// );
+console.log(devpun.list("react"));
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "<deployed URL>"],
+  })
+);
 
 app.get("/", (req, res) => {
   res.json(jokesDB);
