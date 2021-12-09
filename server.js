@@ -11,7 +11,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://hungry-aryabhata-feb08c.netlify.app/",
+      "https://hungry-aryabhata-feb08c.netlify.app",
     ],
   })
 );
