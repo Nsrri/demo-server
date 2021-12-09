@@ -9,7 +9,10 @@ const cors = require("cors");
 console.log(devpun.list("react"));
 app.use(
   cors({
-    origin: ["http://localhost:3000", "<deployed URL>"],
+    origin: [
+      "http://localhost:3000",
+      "https://hungry-aryabhata-feb08c.netlify.app/",
+    ],
   })
 );
 
